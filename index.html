@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Varma S - Full-Stack Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Add resume file instructions: place a file named `resume.pdf` next to this index.html (project root) -->
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Sanjay Varma S</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#publications" class="nav__link">Publications</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="SanjayVarma_Resume_Adobe.pdf" class="nav__link" target="_blank" rel="noopener noreferrer" download aria-label="Download Resume">Resume</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container container">
+            <div class="hero__content">
+                <h1 class="hero__title"><span class="hero__name">SANJAY VARMA S</span></h1>
+                <h2 class="hero__subtitle">Full-Stack Developer | B.Tech Computer Engineering</h2>
+                <p class="hero__tagline" id="typing-text"></p>
+                <p class="hero__location"><i class="fas fa-map-marker-alt"></i> Bengaluru, India</p>
+                <div class="hero__buttons">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <!-- Direct download link; place `resume.pdf` in the project root to make this work -->
+                    <a href="SanjayVarma_Resume_Adobe.pdf" class="btn btn--secondary" download target="_blank" rel="noopener noreferrer">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero__illustration">
+                <div class="illustration-shape">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about__container container">
+            <h2 class="section__title">About Me</h2>
+            <div class="about__content">
+                <div class="about__photo">
+                    <img src="profile.jpg" alt="Sanjay Varma - Profile photo" class="about__photo-img" width="250" height="250">
+                </div>
+                <div class="about__info">
+                    <p class="about__text">
+                        I am a B.Tech Computer Engineering graduate from Presidency University, Bengaluru, with a strong CGPA of 8.29/10. I specialize in Core Java, Object-Oriented Programming, and full-stack development, with extensive experience in building scalable, high-performance applications.
+                    </p>
+                    <p class="about__text">
+                        My technical journey spans across the entire Software Development Life Cycle, from initial design to final deployment. I've had the privilege of working as a Full-Stack Developer at TATA STRIVE and as a Front End Developer at Edunet Foundation (IBM SkillsBuild), where I contributed to improving project delivery times and accuracy.
+                    </p>
+                    <p class="about__text">
+                        Beyond development, I'm passionate about leveraging technology for social impact. My research work includes published papers in JETIR and IEEE conferences, focusing on agricultural technology and machine learning applications. I developed a Medicinal Plant Detection App with 91% accuracy and a Farmer Support Application that's been recognized in academic publications.
+                    </p>
+                    <p class="about__text">
+                        I thrive in collaborative environments, bringing strong problem-solving abilities, adaptability, and excellent communication skills to every project I undertake.
+                    </p>
+                </div>
+            </div>
+            <div class="stats">
+                <div class="stat-card">
+                    <i class="fas fa-graduation-cap stat-card__icon"></i>
+                    <h3 class="stat-card__value">8.29/10</h3>
+                    <p class="stat-card__label">CGPA</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-alt stat-card__icon"></i>
+                    <h3 class="stat-card__value">2</h3>
+                    <p class="stat-card__label">Research Publications</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-certificate stat-card__icon"></i>
+                    <h3 class="stat-card__value">8+</h3>
+                    <p class="stat-card__label">Certifications</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-chart-line stat-card__icon"></i>
+                    <h3 class="stat-card__value">91%</h3>
+                    <p class="stat-card__label">ML Accuracy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills__container container">
+            <h2 class="section__title">Technical Skills</h2>
+            <div class="skills__grid">
+                <!-- Languages -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title"><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Java</span>
+                            <span class="skill-item__percent">90%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">JavaScript</span>
+                            <span class="skill-item__percent">85%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Python</span>
+                            <span class="skill-item__percent">75%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="75"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title"><i class="fas fa-tools"></i> Frameworks &amp; Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">SpringBoot</span>
+                            <span class="skill-item__percent">88%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="88"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">React</span>
+                            <span class="skill-item__percent">85%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Node.js</span>
+                            <span class="skill-item__percent">80%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Git</span>
+                            <span class="skill-item__percent">85%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Postman</span>
+                            <span class="skill-item__percent">80%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">MySQL</span>
+                            <span class="skill-item__percent">85%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-item__header">
+                            <span class="skill-item__name">Firebase</span>
+                            <span class="skill-item__percent">80%</span>
+                        </div>
+                        <div class="skill-item__bar">
+                            <div class="skill-item__progress" data-progress="80"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3 class="skill-category__title"><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="soft-skill-badges">
+                        <span class="soft-skill-badge"><i class="fas fa-check"></i> Teamwork</span>
+                        <span class="soft-skill-badge"><i class="fas fa-check"></i> Communication</span>
+                        <span class="soft-skill-badge"><i class="fas fa-check"></i> Problem Solving</span>
+                        <span class="soft-skill-badge"><i class="fas fa-check"></i> Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience__container container">
+            <h2 class="section__title">Professional Experience</h2>
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full-Stack Developer Intern</h3>
+                        <div class="timeline-company"><i class="fas fa-building"></i> TATA STRIVE</div>
+                        <div class="timeline-duration"><i class="fas fa-calendar"></i> May 2025 - Sept 2025</div>
+                        <ul class="timeline-achievements">
+                            <li>Built scalable Java applications with JDBC for data persistence</li>
+                            <li>Contributed to all SDLC phases from design to deployment</li>
+                            <li>Improved code quality through systematic reviews and debugging</li>
+                            <li>Developed features using SpringBoot and React frameworks</li>
+                            <li>Collaborated with senior developers on architectural decisions</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Front End Web Developer Intern</h3>
+                        <div class="timeline-company"><i class="fas fa-building"></i> Edunet Foundation (IBM SkillsBuild) <span class="badge-virtual">Virtual</span></div>
+                        <div class="timeline-duration"><i class="fas fa-calendar"></i> Aug 2025 - Oct 2025</div>
+                        <ul class="timeline-achievements">
+                            <li>Managed project timelines, reducing delivery times by 30%</li>
+                            <li>Spearheaded adoption of cutting-edge engineering software, improving project accuracy by 15%</li>
+                            <li>Collaborated with cross-functional teams, enhancing project success rates by 10%</li>
+                            <li>Developed responsive web interfaces using modern JavaScript frameworks</li>
+                            <li>Participated in IBM SkillsBuild training programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects__container container">
+            <h2 class="section__title">Featured Projects</h2>
+            <div class="projects__grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-card__image">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Medicinal Plant Detection App</h3>
+                        <p class="project-card__description">Real-time mobile application for identifying medicinal plants using computer vision and machine learning</p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">TensorFlow Lite</span>
+                            <span class="tech-badge">Android</span>
+                            <span class="tech-badge">Machine Learning</span>
+                            <span class="tech-badge">Computer Vision</span>
+                        </div>
+                        <ul class="project-card__features">
+                            <li>Real-time plant detection using device camera</li>
+                            <li>91% classification accuracy across multiple plant species</li>
+                            <li>Lightweight TensorFlow Lite model optimized for mobile devices</li>
+                            <li>User-friendly interface designed for farmers and herbalists</li>
+                            <li>Offline capability for use in rural areas without internet</li>
+                            <li>Database of medicinal properties and usage information</li>
+                        </ul>
+                        <p class="project-card__impact"><i class="fas fa-chart-line"></i> Achieved 91% accuracy in plant identification, helping users identify medicinal plants instantly and safely</p>
+                        <p class="project-card__research"><i class="fas fa-file-alt"></i> Published in IEEE International Conference (ID: ICCAMS2025-61)</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-card__image">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Farmer Support Application</h3>
+                        <p class="project-card__description">Comprehensive Android application providing agricultural support, market information, and community resources to farmers</p>
+                        <div class="project-card__tech">
+                            <span class="tech-badge">Android</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Cloud Firestore</span>
+                            <span class="tech-badge">Real-time Database</span>
+                        </div>
+                        <ul class="project-card__features">
+                            <li>Scalable Firebase backend architecture for data management</li>
+                            <li>Real-time data synchronization across devices</li>
+                            <li>Weather updates and crop recommendations based on location</li>
+                            <li>Live market price information for agricultural products</li>
+                            <li>Community forum for knowledge sharing among farmers</li>
+                            <li>Government scheme notifications and updates</li>
+                        </ul>
+                        <p class="project-card__impact"><i class="fas fa-chart-line"></i> Successfully deployed with scalable architecture. Recognized and published in JETIR journal for its contribution to agricultural technology</p>
+                        <p class="project-card__research"><i class="fas fa-file-alt"></i> Featured in academic research publication (JETIR ID: JETIR2501205)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications" id="publications">
+        <div class="publications__container container">
+            <h2 class="section__title">Research Publications</h2>
+            <div class="publications__grid">
+                <!-- Publication 1 -->
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Uplifting Farmers from Present Ecosystem</h3>
+                        <div class="publication-journal"><i class="fas fa-book"></i> JETIR (Journal of Emerging Technologies and Innovative Research)</div>
+                        <div class="publication-id"><i class="fas fa-hashtag"></i> Paper ID: JETIR2501205</div>
+                        <p class="publication-description">Research paper analyzing the current agricultural ecosystem and proposing technology-driven solutions to improve farmer livelihoods, market access, and sustainable farming practices.</p>
+                    </div>
+                </div>
+                <!-- Publication 2 -->
+                <div class="publication-card">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">Freshness Analysis of Medicinal Plants</h3>
+                        <div class="publication-journal"><i class="fas fa-book"></i> IEEE International Conference</div>
+                        <div class="publication-id"><i class="fas fa-hashtag"></i> Paper ID: ICCAMS2025-61</div>
+                        <p class="publication-description">Technical paper presenting a machine learning approach for analyzing and detecting the freshness quality of medicinal plants using image processing and deep learning techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="education__container container">
+            <h2 class="section__title">Education</h2>
+            <div class="timeline">
+                <!-- Education 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">B.Tech in Computer Engineering</h3>
+                        <div class="timeline-company"><i class="fas fa-university"></i> Presidency University, Bengaluru</div>
+                        <div class="timeline-duration"><i class="fas fa-calendar"></i> July 2025</div>
+                        <div class="education-score">CGPA: 8.29/10</div>
+                        <p class="timeline-highlight">Strong foundation in algorithms, data structures, software engineering, and full-stack development</p>
+                    </div>
+                </div>
+                <!-- Education 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">12th Grade (Pre-University)</h3>
+                        <div class="timeline-company"><i class="fas fa-school"></i> Newton Integrated PU College</div>
+                        <div class="timeline-duration"><i class="fas fa-calendar"></i> 2021</div>
+                        <div class="education-score">92.87%</div>
+                    </div>
+                </div>
+                <!-- Education 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">10th Grade</h3>
+                        <div class="timeline-company"><i class="fas fa-school"></i> Sir M V M High School</div>
+                        <div class="timeline-duration"><i class="fas fa-calendar"></i> 2019</div>
+                        <div class="education-score">85.44%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="certifications__container container">
+            <h2 class="section__title">Certifications</h2>
+            <div class="certifications__grid">
+                <div class="cert-badge"><i class="fas fa-certificate"></i> Core Java</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> SpringBoot</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> React</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> SQL</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> Git &amp; GitHub</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> Generative AI</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> IBM SkillsBuild (AICTE)</div>
+                <div class="cert-badge"><i class="fas fa-certificate"></i> JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact__container container">
+            <h2 class="section__title">Get In Touch</h2>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3 class="contact__subtitle">Let's work together!</h3>
+                    <p class="contact__text">I'm currently open to new opportunities and collaborations. Feel free to reach out if you'd like to discuss a project or just want to connect.</p>
+                    <div class="contact__details">
+                        <div class="contact__detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru, India</span>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="fas fa-envelope"></i>
+                            <span>Sanjayverma000003@gmail.com</span>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 8050022439</span>
+                        </div>
+                        <div class="contact__detail">
+                            <i class="fas fa-briefcase"></i>
+                            <span class="status--success">Open to Opportunities</span>
+                        </div>
+                    </div>
+                    <div class="contact__social">
+                        <a href="https://www.linkedin.com/in/sanjay-varma2003/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sanjayverma1234" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:Sanjayverma000003@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://resumeportpolio.vercel.app" target="_blank" class="social-link" aria-label="Portfolio">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact__form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                        <span class="form-error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                        <span class="form-error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                        <span class="form-error" id="subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        <span class="form-error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    <div class="form-success" id="form-success"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <p>&copy; 2025 Sanjay Varma S. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
+</body>
+</html>
